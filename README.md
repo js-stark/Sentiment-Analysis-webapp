@@ -7,14 +7,14 @@
 
 `pip install git+ssh://git@github.com/js-stark/Preprocess_package_NLP.git`
 
-How to Use??
+#### How to Use??
 
-`--> First Download the zip file and Extract the files init.
- --> Once files are extracted open the project in any editor such as spyder, atom etc.
- --> Make sure that all the required packages and imports specified in the app.py file are installed.
- --> Run the app.py file and copy the port address and paste it in your browser.
- --> Now you could see the Magic.
- --> If you further wish to deploy it in the wideweb you can use Docker containers to compile and Microsoft Azure to publish.`
+###### --> First Download the zip file and Extract the files init.
+###### --> Once files are extracted open the project in any editor such as spyder, atom etc.
+###### --> Make sure that all the required packages and imports specified in the app.py file are installed.
+###### --> Run the app.py file and copy the port address and paste it in your browser.
+###### --> Now you could see the Magic.
+###### --> If you further wish to deploy it in the wideweb you can use Docker containers to compile and Microsoft Azure to publish.
  
 ![2)main page](https://user-images.githubusercontent.com/79846829/126505559-2eb0d74c-63a2-49a7-859b-67de1c619ad7.png)
 
