@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--------------------Head Section------------------------>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>luv@Ai</title>
+    
+    <!----------------Custom Styling--------------------->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styling.css')}}">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/aos.css">
+    <!---------x-------Custom Styling----------x----------->
+</head>
+
+<!-----------x---------Head Section------------x------------>
+
+
+<!--------------------Body Section------------------------>
+
+<!--------------------Navigation Section------------------------>
+
+<body>
+    <header class="top_header">
+      <div class="container">
+        <div class="logo">
+          <a href="#">LuVaI</a>
+        </div>
+        <div class="right_header">
+          <div id="header_toggle">
+            <span class="hamburger">
+              <span class="icon1"></span>
+              <span class="icon2"></span>
+              <span class="icon3"></span>
+            </span>
+          </div>
+          <div class="navigation_bar">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Projects</a>
+                </li>
+                <li>
+                  <a href="#">Feed</a>
+                </li>
+                <li>
+                  <a href="#">Community</a>
+                </li>
+                <li>
+                  <a href="#">About</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="social_icons">
+            <ul>
+              <li>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+              </li>              
+              <li>
+                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile_nav"></div>
+
+    <section class="banner" style="background-image:url('../static/ai_pics/1.jpg');">
+      <div class="container">
+        <h1>The LuvAI Empire</h1>       
+        <p>Exploring the finest Masterminding in Artificifial Intelligence<br>that unravels the Sanity behind your Madness</p>
+        <a href="#output" class="button">Unravel</a>
+      </div>
+    </section>
+
+<!-----------x---------Navigation Section---------x--------------->
+
+    <div id="output" class="project">
+    {% if scroll %}
+    <script>
+    document.getElementById('{{ scroll }}').scrollIntoView();
+    </script>
+    {% endif %}
+      <div class="bg"></div>
+      <div class="content">
+        <div class="textBox">
+            <h2>Sentiment Forecast</h2>
+            <p>Hey folks, Feed me in your thoughts and I will give you the emotion
+              associated with your ideas!!!</p>
+              <div class = "input-group">
+                 <form action="/sentiment_analysis_prediction" id="my-form" method="post" enctype="multipart/form-data">
+                 <input size="40" name = "text" class = "form-control" placeholder = "Text">
+                 <input class="submit" type="submit">
+                 </form>
+            </div>
+            <div class="col-md-3 probability">
+              <h4 class="probability">Probability</h4>
+              <div class="alert alert-primary probability1" role="alert">
+                  {% if probability %}
+                    {{ probability }}
+                     {% endif %}
+              </div>
+          </div>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="emotion">
+          {% if probability %}
+          <div class="col-sm-2 img">
+              <img class="img" src="{{ image }}" alt="Image">
+                  {% endif %}
+          </div>
+        </div> 
+      </div>
+      <ul class="icons">
+          <li> <a href="#"> <img class="facebook" src="../static/img/facebook.png"> </a> </li>
+          <li> <a href="#"> <img src="../static/img/twitter.png"> </a> </li>
+          <li> <a href="#"> <img src="../static/img/instagram.png"> </a> </li>
+      </ul>
+
+    </div>
+    <script src="../js/main.js"></script>
+
+<!-----------x---------Main Section---------x--------------->
+
+
+<!-----------x---------Main Section---------x--------------->
+
+
+
+<!-----------x---------Footer Section-------------x----------->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.6.0.min.js"></script>
+
+    <!--Animation Lib -->
+    <script src="js/aos.js"></script>
+    <!--Animation Lib -->
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+<!----------x----------Body Section-------------x----------->

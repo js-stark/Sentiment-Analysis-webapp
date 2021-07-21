@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: sans-serif;
+}
+
+h1{
+    padding-top: 2rem;
+    padding-left: 12rem;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    color: crimson;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: crimson;
+    box-shadow: 2px 0px 5px black;
+}
+
+ul li{
+    margin: 5px;
+    padding: 5px;
+    margin-top: 75px;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+
+ul li a:hover{
+    background: rgb(240, 166, 166);
+    color: rgb(19, 15, 15);
+}
+
+section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    text-transform: uppercase;
+}
+
+.sec1{
+    background: linear-gradient(-45deg,white 30%,yellow 0%);
+}
+.sec2{
+    background: linear-gradient(-45deg,white 30%,lightgreen 0%);
+}
+.sec3{
+    background: linear-gradient(-45deg,white 30%,lightblue 0%);
+}
+.sec4{
+    background: linear-gradient(-45deg,white 30%,tomato 0%);
+}
+.sec5{
+    background: linear-gradient(-45deg,white 30%,violet 0%);
+}
+
+.topic{
+    padding-top: 10rem !important;
+    padding-left: 20rem;
+    width: 70%;
+}
+
+.description{
+    padding-top: 1rem !important;
+    padding-left: 22rem;
+    width: 170%;
+    color: rgb(196, 47, 255);
+
+}
+
+.input-group{
+    padding-top:17rem ;
+    margin-left: -8.3rem;
+    color: rgb(196, 47, 255);
+    width: 100%;
+    font-family: sans-serif;
+    size: 5rem;
+}
+
+.sentiment{
+    padding-top: 30rem;
+    margin-left: -10rem;
+    width: 100%;
+    color: rgb(240, 75, 108);
+    font-family: Helvetica;
+}
+
+.sentiment1{
+    padding-top: -20rem;
+    margin-left: -10rem;
+    width: 100%;
+    color: rgb(240, 75, 108);
+}
+
+
+.probability{
+    font-family: Helvetica;
+    padding-top: 20 rem;
+    margin-left: 2rem;
+    color:rgb(240, 75, 108);
+    width: 200%;
+}
+
+.probability1{
+    padding-top: -20rem;
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.emotion{
+    padding-top: 20rem;
+    padding-right: 17rem;
+}
+
+.img{
+    size:"2rem";
+    border-radius:2rem;
+    padding-left:10rem;
+}
